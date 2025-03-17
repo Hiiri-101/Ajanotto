@@ -2,7 +2,8 @@
 
 namespace App\Models;
 
-$userValue = "";
+$sql = "SELECT nimi, tunnus FROM kayttajat";
+$userValue = $mysql->query($sql);
 
 use Illuminate\Database\Eloquent\Model;
 
