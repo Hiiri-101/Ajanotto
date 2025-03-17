@@ -11,11 +11,6 @@
 
 <div class="container">
     <form id="passForm"
-
-
-          action=" {{ Route::redirect('/tunnus', '/process') }} "
-          
-          
           method="POST">
         <label for="nimi">Nimi:</label><br>
         <input type="text" id="nimi"

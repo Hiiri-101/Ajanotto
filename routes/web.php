@@ -6,11 +6,6 @@ Route::get('/', function () {
     return view('kirjautuminen.tunnus', ['sivuNimi' => 'Kirjaudu']);
 });
 
-Route::get('/koodi', function () {
-    return view('kirjautuminen.koodi', ['sivuNimi' => 'Kirjaudu
-                                                      koodilla']);
-});
-
 Route::get('/sihteeri', function () {
     return view('aloitus.sihteeri');
 });
