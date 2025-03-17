@@ -25,7 +25,21 @@ Route::get('/paakayttaja', function () {
 
 #-
 
-Route::get('/process', 'Redirect@toRoute');
+//Route::get('/process', 'Redirect@toRoute');
+
+
+// ex. test
+use App\Http\Controllers\PostController;
+
+Route::get('/post/create', [PostController::class, 'create']);
+Route::post('/post', [PostController::class, 'store']);
+
+//another ex.
+use App\Models\User;
+
+Route::get('/user/{user}', function (User $user) {
+    return $user;
+});
 
 
 // Common Resource Routes:

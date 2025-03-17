@@ -11,7 +11,11 @@
 
 <div class="container">
     <form id="passForm"
+
+
           action=" {{ Route::redirect('/tunnus', '/process') }} "
+          
+          
           method="POST">
         <label for="nimi">Nimi:</label><br>
         <input type="text" id="nimi"
@@ -27,16 +31,12 @@
     </form>
     {{-- @if(array_key_exists('submitForm', $_POST))
     @endif --}}
-
+</div>
 {{-- 
 @if(array_key_exists('codePage', $_POST))
 
 @endif --}}
-<br>
-<input type="form">
-  <button type="submit"
-          class="btn btn-primary">Kirjaudu koodilla</button>
-</input>
+
 
 {{-- @unless ()
 

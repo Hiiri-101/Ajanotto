@@ -10,4 +10,8 @@ class Redirect extends Model
         Route::post('/submitForm', function () {
         });
     }
+
+    public function idk(Request $input) {
+        $input = $request->all();
+    }
 }
