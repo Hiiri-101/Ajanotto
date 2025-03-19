@@ -15,7 +15,11 @@ return new class extends Migration
             $table->id();
             $table->string('nimi');
             $table->string('tunnus');
-            $table->string('rooli');
+            $table->char('remember_token',
+                          length: 10);
+            $table->string('rooli')
+                   ->nullable($value = true)
+                   ->default(NULL);
             $table->timestamps();
         });
     }

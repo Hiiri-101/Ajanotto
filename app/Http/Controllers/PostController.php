@@ -1,5 +1,6 @@
 <?php
 
+/*
 namespace App\Http\Controllers;
 
 use Illuminate\Http\RedirectResponse;
@@ -20,3 +21,4 @@ class PostController extends Controller
         return to_route('post.show', ['post' => $post->id]);
     }
 }
+*/

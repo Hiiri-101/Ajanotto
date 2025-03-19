@@ -6,12 +6,14 @@
     </head>
 <body>
     <header>
-        <h1>{{$sivuNimi}}</h1>
+        <h1>Kirjaudu</h1>
     </header>
 
 <div class="container">
-    <form id="passForm"
-          method="POST">
+    <form action=""
+
+          method="POST">//
+
         <label for="nimi">Nimi:</label><br>
         <input type="text" id="nimi"
                name="nimi">
