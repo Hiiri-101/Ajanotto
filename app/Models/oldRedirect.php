@@ -1,4 +1,5 @@
 <?php
+/*
 namespace App\Models;
 
 class Redirect {
@@ -8,6 +9,7 @@ class Redirect {
         }
     }
 }
+*/
 
 /*
 if (isset($_POST["nimi"])) {
