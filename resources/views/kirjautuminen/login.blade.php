@@ -10,16 +10,17 @@
     </header>
 
 <div class="container">
-    <form action=""
-
-          method="POST">//
+    <form action="{{ url('/login') }}"
+    
+    method="POST">//
+    @csrf
 
         <label for="nimi">Nimi:</label><br>
         <input type="text" id="nimi"
                name="nimi">
         <br>
         <label for="tunnus">Tunnus:</label><br>
-        <input type="text" id="tunnus"
+        <input type="password" id="tunnus"
                name="tunnus">
         <br>
         <button type="submit"

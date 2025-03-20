@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
+use App\Http\Controllers\CheckController;
 
 Route::get('/', function () {
     return redirect('/login');
@@ -10,6 +11,8 @@ Route::get('/', function () {
 Route::get('/login', function () {
     return view('kirjautuminen.login');
 });
+
+Route::post('/login', [CheckController::class, 'checkUser']);
 
 // , ['sivuNimi' => 'Kirjaudu']
 
