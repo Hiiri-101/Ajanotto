@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\CheckController;
 
+// Kirjautuminen
 Route::get('/', function () {
     return redirect('/login');
 });
@@ -13,9 +14,10 @@ Route::get('/login', function () {
 });
 
 Route::post('/login', [CheckController::class, 'checkUser']);
+#-
 
-// , ['sivuNimi' => 'Kirjaudu']
 
+// Aloitus
 Route::get('/sihteeri', function () {
     return view('aloitus.sihteeri');
 });
@@ -27,8 +29,16 @@ Route::get('/tuomari', function () {
 Route::get('/paakayttaja', function () {
     return view('aloitus.paakayttaja');
 });
-
 #-
+
+
+// Ajanotto
+Route::get('/ajanotto', function () {
+    return view('demo.ajanotto');
+});
+#-
+
+
 
 //Route::get('/process', 'Redirect@toRoute');
 
