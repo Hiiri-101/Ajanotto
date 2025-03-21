@@ -15,14 +15,13 @@ return new class extends Migration
             $table->id();
             $table->timestamps();
             $table->string('tehtavaNimi');
-            $table->int('aika');
+            $table->integer('aika');
             $table->string('tiimi');
             $table->foreignId('task_id');
         });
 
-        Schema::create('', function (Blueprint $table) {
-            $table->string('tehtava');
-            $table->int('aika');
+        Schema::create('lopputulos', function (Blueprint $table) {
+            $table->integer('loppuaika');
             $table->foreignId('task_id');
         });
     }
